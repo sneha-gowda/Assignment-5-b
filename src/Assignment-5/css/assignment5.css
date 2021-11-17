@@ -1,7 +1,10 @@
 /* Our CSS file. */
 body {
-  background-color: beige;
+  background-color: rgb(238, 238, 238);
   font-family: -webkit-body;
+}
+h1 {
+  font-size: -webkit-xxx-large;
 }
 .container,
 .content {
@@ -13,40 +16,50 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: safe;
+  margin: 90px 50px 0px 50px;
   align-items: center;
-  margin: 0 80px 100px 60px;
   background-color: white;
   box-shadow: 5px 10px 5px 0 rgba(59, 57, 57, 0.2),
     5px 4px 20px 5px rgba(0, 0, 0, 0.19);
   border-radius: 10px;
   border-top-left-radius: 10px;
-  height: 454px;
+  height: max-content;
 }
 .Image {
-  width: 25%;
-  height: 454px;
-  background-color: rgb(94, 190, 94);
-  border-radius: 10px;
+  max-width: 337px;
+  height: 400px;
+  background-color: rgb(168, 209, 137);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
-.container1 {
-  margin-top: 100px;
+.content {
+  text-align: start;
+  max-width: 375px;
+  min-width: min-content;
+  padding-left: 90px;
+  padding-right: 20px;
+  height: 250px;
+  display: block;
 }
-
 .container1 .Image img {
   transform: translate(-50px, -80px);
 }
 .container2 .Image img {
   width: 400px;
   height: 300px;
-  transform: translate(-40px, 70px);
+  transform: translate(-20px, 70px);
 }
-
-.content {
-  text-align: left;
-  width: 49%;
-  margin: 0 1% 0 100px;
+.content h1,
+p,
+a {
+  margin-bottom: 40px;
 }
-h1 {
-  font-size: -webkit-xxx-large;
+a {
+  padding: 15px 20px;
+  background-color: rgb(168, 209, 137);
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+  font-family: Baghdad;
 }
